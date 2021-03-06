@@ -24,3 +24,6 @@ def parseXML(xmlFile):
 if __name__ == "__main__":
     #parseXML("calibracion.xml")
     parseXML("calibracion.xml")
+    
+    
+    
