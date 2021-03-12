@@ -56,36 +56,6 @@ def parsexml(xmlFile):
         #print(len(r))
         data=str(r[0].tag)
         print(data[data.find("}")+1:], "-> ", r[0].text)
-        """
-        print(r[0].tag)
-        print(r[0].text)
-        """              
-        
-        
-        """
-        elem_tree=etree.parse(StringIO('<foo><bar></bar></foo>'))
-        r=elem_tree.xpath('/foo/bar')
-        print(len(r))
-        """
-        """
-        f = StringIO('''<a:foo xmlns:a="http://codespeak.net/ns/test1"\
-                     xmlns:b="http://codespeak.net/ns/test2">
-                     <b:bar>Text</b:bar>\
-                     </a:foo>''')
-        doc = etree.parse(f)
-        r = doc.xpath('/x:foo/b:bar', 
-                      namespaces={'x': 'http://codespeak.net/ns/test1',
-                                  'b': 'http://codespeak.net/ns/test2'})
-        print(len(r))
-        print(r[0].tag)
-        print(r[0].text)
-        """
-        
-        
-        #for event, element in etree.iterwalk(store, events=('start', 'end')):
-        #    print(event,element)
-        
-        
 
 if __name__ == "__main__":
     #parseXML("calibracion.xml")

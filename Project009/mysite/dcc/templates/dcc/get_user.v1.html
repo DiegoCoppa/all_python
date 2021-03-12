@@ -1,12 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html> 
+    <head>
+    <link rel="stylesheet"  href="{%  static  'dcc/stylefront.css'  %}">   
+    </head>
+    <h1>INTI DCC</h1>
+    <img src="{% static 'dcc/Isologotipo.jpg' %}" alt="My image" class="center"></td>
     <form action="/dcc/" method="POST">
-     {% csrf_token %}
-     {{ form }}
-     <input type="submit" value="OK">
-     </form>
-
-{% load static %}
-<img src="{% static 'dcc/Isologotipo.jpg' %}" alt="My image">
-
+        {% csrf_token %}
+        {{ form }}
+    <input type="submit" value="OK">
+  
 </html>

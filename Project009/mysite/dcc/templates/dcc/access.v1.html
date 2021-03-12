@@ -1,34 +1,41 @@
-
-
+{% load static %}
 <!DOCTYPE html>
 <html>
-   <meta charset="utf-8">
-
-    
-    {% load static %}
-    <link rel="stylesheet" type="text/css" src="{% static 'dcc/style.css' %}">
-   
+    <meta charset="utf-8">
     <head>
+    <link rel="stylesheet"  href="{%  static  'dcc/style.css'  %}">
     <title>
     INTI DCC 
     </title>
     </head>
     <h1> DCC INTI - {{Centro}}</h1>
     <h2> {{Name}} </h2>
-    <p> permisos grado: {{permisos}} </p>
-    <p> user: {{user}} </p>
-    <p> Depto: {{departamento}} </p>
-    <p> email: {{email}}@inti.gob.ar </p>
+        <p> permisos grado: {{permisos}} </p>
+        <p> user: {{user}} </p>
+        <p> Depto: {{departamento}} </p>
+        <p> email: {{email}}@inti.gob.ar </p>
     
-    <h3> Subir un archivo DCC (*.xml): </h3>
-    
-    <form enctype="multipart/form-data" action="/dcc/access/{{user}}/" method="POST"> 
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">Upload xml</button>
+    <table>
+        <thead>
+            <th><h3> Subir un archivo DCC (*.xml): </h3></th>
+            <th><h3> Subir Procedimiento:</h3></th> 
+        </thead>
+        <tbody>
+            <td>
+            <form enctype="multipart/form-data" action="/dcc/access/{{user}}/" method="POST"> 
+                {% csrf_token %}
+                {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Upload xml</button>
+            </td>
+            <td>
+            Acá iría otra info
+            </td>
     </form> 
+        
+        </tbody>
+    </table>
 
-   <h4> Tabla de documentos xml: </h4>    
+   <h3> Tabla de documentos xml: </h>
     <table class="table">
         <thead>
             <tr class="columns" data-columns="4">

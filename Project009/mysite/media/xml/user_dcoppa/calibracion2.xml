@@ -1,0 +1,171 @@
+﻿<?xml version="1.0"?>
+<dcc:digitalCalibrationCertificate
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="https://ptb.de/dcc https://ptb.de/dcc/v2.3.0/dcc.xsd"
+		xmlns:dcc="https://ptb.de/dcc"
+		xmlns:si="https://ptb.de/si"
+		schemaVersion="2.3.0">
+	<dcc:administrativeData>
+		<dcc:dccSoftware>
+			<dcc:software id="INTI-DCC4F">
+				<dcc:name>
+					<dcc:content>INTI-DCC4F</dcc:content>
+				</dcc:name>
+				<dcc:release>v1.0.0</dcc:release>
+				<dcc:description id="DCCbyDC">
+					<dcc:content lang="es">Este es un soft hecho por el Ing. Diego Coppa</dcc:content>
+				</dcc:description>
+			</dcc:software>
+		</dcc:dccSoftware>
+		<dcc:coreData>
+			<dcc:countryCodeISO3166_1>AR</dcc:countryCodeISO3166_1>
+			<dcc:langCodeISO639_1>es</dcc:langCodeISO639_1>
+			<dcc:mandatoryLangISO639_1>es</dcc:mandatoryLangISO639_1>
+			<dcc:uniqueIdentifier>OT222-01125-1</dcc:uniqueIdentifier>
+			<dcc:receiptDate>2020-02-27T00:37:01</dcc:receiptDate>
+			<dcc:beginPerformanceDate>2002-07-25</dcc:beginPerformanceDate>
+			<dcc:endPerformanceDate>2002-07-27</dcc:endPerformanceDate>
+		</dcc:coreData>
+		<dcc:items>
+			<dcc:name>PT100</dcc:name>
+			<dcc:description> Modelo:100 NS:215AD</dcc:description>
+			<dcc:owner>Lenor S.A.</dcc:owner>
+			<dcc:item>Según procedimiento PEC01</dcc:item>
+		</dcc:items>
+		<dcc:calibrationLaboratory>
+			<dcc:contact id="INTI">
+				<dcc:name>
+					<dcc:content lang="es">Instituto Nacional de Tecnología Industrial (I.N.T.I.)</dcc:content>
+				</dcc:name>
+				<dcc:eMail>consultas@inti.gob.ar</dcc:eMail><dcc:location>
+					<dcc:city>Ciudad Autónoma de Buenos Aires</dcc:city>
+					<dcc:countryCode>AR</dcc:countryCode>
+					<dcc:postCode>C1063 ACH</dcc:postCode>
+					<dcc:state>Argentina</dcc:state>
+					<dcc:street>Av. Paseo Colón</dcc:street>
+					<dcc:streetNo>717</dcc:streetNo>
+				</dcc:location>
+			</dcc:contact>
+		</dcc:calibrationLaboratory>
+		<dcc:respPersons>
+			<dcc:person id="Técnico">
+				<dcc:name>Diego Coppa</dcc:name>
+				<dcc:eMail>dcoppa@inti.gob.ar</dcc:eMail>
+				<dcc:phone>(5411) 4724-6200 int 6933</dcc:phone>
+				<dcc:location>
+					<dcc:city>Provincia de Buenos Aires</dcc:city>
+					<dcc:countryCode>AR</dcc:countryCode>
+					<dcc:postCode>B1650WAB</dcc:postCode>
+					<dcc:state>Argentina</dcc:state>
+					<dcc:street>Av. General Paz</dcc:street>
+					<dcc:streetNo>5445</dcc:streetNo>
+					<dcc:further>
+						<dcc:content>San Martín</dcc:content>
+					</dcc:further>
+				</dcc:location>
+			</dcc:person>
+			<dcc:description>
+				<dcc:content id="user">slupo</dcc:content>
+				<dcc:content id="Departamento">Flujo y Volumen</dcc:content>
+				<dcc:content id="Centro">Metrología Física</dcc:content>
+				<dcc:content id="Gerencia">GOMYC</dcc:content>
+			</dcc:description>
+		</dcc:respPersons>
+		<dcc:respPersons>
+			<dcc:person id="Responsable">
+				<dcc:name>Sergio Lupo</dcc:name>
+				<dcc:eMail>slupo@inti.gob.ar</dcc:eMail>
+				<dcc:phone>(5411) 4724-6200 int 6933</dcc:phone>
+				<dcc:location>
+					<dcc:city>Provincia de Buenos Aires</dcc:city>
+					<dcc:countryCode>AR</dcc:countryCode>
+					<dcc:postCode>B1650WAB</dcc:postCode>
+					<dcc:state>Argentina</dcc:state>
+					<dcc:street>Av. General Paz</dcc:street>
+					<dcc:streetNo>5445</dcc:streetNo>
+					<dcc:further>
+						<dcc:content>San Martín</dcc:content>
+					</dcc:further>
+				</dcc:location>
+			</dcc:person>
+			<dcc:description>
+				<dcc:content id="user">slupo</dcc:content>
+				<dcc:content id="Departamento">Flujo y Volumen</dcc:content>
+				<dcc:content id="Centro">Metrología Física</dcc:content>
+				<dcc:content id="Gerencia">GOMYC</dcc:content>
+			</dcc:description>
+			<dcc:mainSigner>True</dcc:mainSigner>
+		</dcc:respPersons>
+		<dcc:respPersons>
+			<dcc:person  id="Signature">
+				<dcc:name>Juan Forastieri</dcc:name>
+				<dcc:eMail>jaforast@inti.gob.ar</dcc:eMail>
+				<dcc:phone>(5411) 4724-6200 int 6933</dcc:phone>
+				<dcc:location>
+					<dcc:city>Provincia de Buenos Aires</dcc:city>
+					<dcc:countryCode>AR</dcc:countryCode>
+					<dcc:postCode>B1650WAB</dcc:postCode>
+					<dcc:state>Argentina</dcc:state>
+					<dcc:street>Av. General Paz</dcc:street>
+					<dcc:streetNo>5445</dcc:streetNo>
+					<dcc:further>
+						<dcc:content>San Martín</dcc:content>
+					</dcc:further>
+				</dcc:location>
+			</dcc:person>
+			<dcc:description>
+				<dcc:content id="user">slupo</dcc:content>
+				<dcc:content id="Centro">Metrología Física</dcc:content>
+				<dcc:content id="Gerencia">GOMYC</dcc:content>
+			</dcc:description>
+			<dcc:cryptElectronicSeal>True</dcc:cryptElectronicSeal>
+			<dcc:cryptElectronicTimeStamp>True</dcc:cryptElectronicTimeStamp>
+		</dcc:respPersons>
+		<dcc:customer>
+			<dcc:contact id="SecondMetroLab S.A.">
+				<dcc:name>
+					<dcc:content lang="es">SecondMetroLab S.A.</dcc:content>
+				</dcc:name>
+				<dcc:eMail>info@sml.com.ar</dcc:eMail>
+				<dcc:location>
+					<dcc:city>Ciudad Autónoma de Buenos Aires</dcc:city>
+					<dcc:countryCode>AR</dcc:countryCode>
+					<dcc:postCode>C1530</dcc:postCode>
+					<dcc:state>Argentina</dcc:state>
+					<dcc:street>Av. del Metrólogo</dcc:street>
+					<dcc:streetNo>2357</dcc:streetNo>
+				</dcc:location>
+			</dcc:contact>
+		</dcc:customer>
+		<dcc:statements> </dcc:statements>
+	</dcc:administrativeData>
+	<dcc:measurementsResults>
+		<dcc:list>
+			<dcc:quantity>
+				<dcc:name>
+					<dcc:content lang="es">Masa</dcc:content>
+				</dcc:name>
+				<si:real>
+					<si:value>10.000003E-3</si:value>
+					<si:unit>\kilogram</si:unit>
+					<si:expandedUnc>
+						<si:uncertainty>0.000004E-3</si:uncertainty>
+						<si:coverageFactor>0.000004E-3</si:coverageFactor>
+						<si:coverageProbability>0.95</si:coverageProbability>
+					</si:expandedUnc>
+				</si:real>
+			</dcc:quantity>
+			<dcc:quantity>
+				<dcc:name>
+					<dcc:content lang="es">Valor Nominal</dcc:content>
+				</dcc:name>
+				<dcc:noQuantity>
+					<dcc:content>10g</dcc:content>
+				</dcc:noQuantity>
+			</dcc:quantity>
+
+		</dcc:list>
+	</dcc:measurementsResults>
+	<dcc:comments> no comments</dcc:comments>
+	<dcc:document> no document</dcc:document>
+</dcc:digitalCalibrationCertificate>

@@ -1,30 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <meta charset="utf-8">
-    
     <head>
-    <title>
-    INTI DCC 
-    </title>
-    
-    <h1> file </h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th> Descripción</th>
-                <th> Download</th>
-            </th>
-        <tbody>
-            {% for document in documents %}
+        <link rel="stylesheet"  href="{%  static  'dcc/style.css'  %}">   
+        <title>
+        INTI DCC 
+        </title>
+        <h1> file </h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> Descripción</th>
+                    <th> Download</th>
+                </tr>
+            <tbody>
+                {% for document in documents %}
                 <tr>
                     <td>{{ document.description }}</td>            
                     <td>{{ document.document }}</td>            
                 </tr>
-            {% endfor %}
-
-       </thead>
-    </table>
-    <tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </thead>
 </html>
 
 

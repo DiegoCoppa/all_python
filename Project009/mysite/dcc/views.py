@@ -20,9 +20,11 @@ def get_user(request):
     try:
         if(request.method == 'GET'):
             form = NameForm()
+            print("2")
             return render(request, 'dcc/get_user.v1.html', {'form': form})
         
         elif (request.method == 'POST'):
+            print(1)
             # create a form instance and populate it with data from the request:
             formInfo = NameForm(request.POST) #usa el forms.py
             if formInfo.is_valid():
@@ -39,6 +41,7 @@ def get_user(request):
                     print (message)
             else: 
                 print("not valid")
+        else:print("1")
         
     except Exception as ex:
         template = "An exception of type {0} occurred. Arguments:\n{1!r}"
