@@ -65,10 +65,10 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     <!-- End of mathjax configuration -->
 
 <style type="text/css">
-    pre { line-height: 125%; }
-td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
-td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+    pre { line-height: 125%; margin: 0; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
@@ -14412,25 +14412,20 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><div style="img/fondo.png; background-repeat: no-repeat; background-size: contain; height: auto; width: 100%; ">
-<td  style="color:rgb(0, 53, 143);font-size:20px;text-align:left;font-family:Montserrat;">
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Breve resumen: </p>
-<ul style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">
+</script><td  style="color:rgb(0, 53, 143);font-size:20px;text-align:left;font-family:Montserrat;">
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Breve resumen: </p>
+<ul style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">
     <li>Razones que motivaron la propuesta de un modelo de DCC</li>
     <li>¿Cómo es un certificado de calibración hoy?</li>
-    <li>¿Cuál es la propuesta del DCC?</li>
+    <li>¿Cuál es la propuesta?</li>
     <li>D-SI</li>
     <li>DCC</li>
     <li>Características del xml</li>
     <li>Firma digital, Encripción,  y Transmisión</li> 
     <li>¿Qué implica en el mediano plazo y la transición?</li>
-    <li>Ejemplos de acceso</li>
     <li>Case of uses</li>
-    <li>En un sistema de gestión</li> 
-    <li>Tipos</li>        
 </ul>
 </td>
-</div>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14439,7 +14434,7 @@ div.jp-OutputPrompt {
     setBackgroundImage("img/dofon8.png", "white");
 </script><table>
     <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">                     
+    <td style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">                     
         <p>Ing. Diego Nahuel Coppa</p>
         <p>Departamento de Flujo y Volumen</p>
         <p>Centro de Metrología Física</p>
@@ -14455,8 +14450,10 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
+    from IPython.display import HTML
+    HTML(''.format(open('/media/diego/E4D5-3D001/02.Trabajo/Python/all_python/Project011/css/style.css').read()))
 </script><p><h1 style="color:rgb(0, 53, 143);font-family:Montserrat;">Razones que motivaron la propuesta de un modelo de DCC</h1></p>
-<p><p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> DCC es por sus siglas en inglés: (Digital Calibration Certificate). El DCC es un Certificado de Calibración Digital, pero no cualquier Certificado digital, sino uno en el contexto del D-SI.</p></p>
+<p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;" > DCC (Digital Calibration Certificate). Un Certificado Digital con el D-SI como núcleo.</p></p>
 <table>
     <tr>
     <td>                     
@@ -14474,8 +14471,7 @@ div.jp-OutputPrompt {
            <img src="img/Industria4.gif" alt="Drawing]" style="width: 200px;"/>
         </td>
         <td>                     
-            <p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;" >Avances tecnológicos como el Inteligencia Artificial, Aprendizaje de máquinas (Machine Learning),  Gemelos Digitales, Impresoras 3D, "Cloud Computing", AGILE.</p>
-            <p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Aplicaciones específicas como el Ciudades inteligentes, Redes eléctricas inteligentes, 5G + IPV6, Autos autónomos, Big Data y muchas más.</p>
+            <p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;" >Inteligencia Artificial, Aprendizaje de máquinas (Machine Learning),  Gemelos Digitales, Impresoras 3D, "Cloud Computing", AGILE, Ciudades inteligentes, Redes eléctricas inteligentes, 5G + IPV6, Autos autónomos, Big Data y muchas más.</p>
         </td>
     </tr>
 </table>
@@ -14486,13 +14482,13 @@ div.jp-OutputPrompt {
 <script>
     setBackgroundImage("img/dofon8.png", "white");
 </script><p><h1 style="color:rgb(0, 53, 143);font-family:Montserrat;"> Un camino: el DCC </h1></p>
-<p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Esta propuesta fue aceptada por la Unión Europea y se creó un programa llamado Smartcom bajo su órbita. Luego esta propuesta  se siguió trabajando en un proyecto llamado GEMIMEG (consorcio entre empresas privadas y el PTB).
-<p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">El INTI está trabajando en conjunto con el GEMIMEG para una propuesta final del DCC.</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">
+<p  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Esta propuesta fue aceptada por la Unión Europea y se creó el programa Smartcom bajo su órbita. Luego el proyecto fue tomado el Proyecto GEMIMEG (consorcio entre empresas privadas y el PTB).
+<p  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">El INTI está trabajando en conjunto con el GEMIMEG para una propuesta final del DCC.</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">
 <table>
 <tr>
-    <td style="color:rgb(0, 53, 143);font-size:15px;font-family:Montserrat;"><h1>Programa Smartcom</h1></td>
-    <td style="color:rgb(0, 53, 143);font-size:15px;font-family:Montserrat;"><h1>Proyecto GEMIMEG II</h1></td>
+    <td><h1 style="color:rgb(0, 53, 143);font-size:15px;font-family:Montserrat;">Programa Smartcom</h1></td>
+    <td><h1 style="color:rgb(0, 53, 143);font-size:15px;font-family:Montserrat;">Proyecto GEMIMEG II</h1></td>
 </tr>
 <tr>
         <td><a href="https://www.ptb.de/empir2018/smartcom/project/"><img src="img/csm_Atlas_Smartcom_0674091bc1.png" alt="Drawing" style="width: 200px;font-family:Montserrat;"/></a></td>
@@ -14507,9 +14503,10 @@ div.jp-OutputPrompt {
 <script>
     setBackgroundImage("img/dofon8.png", "white");
 </script><p><h2 style="color:rgb(0, 53, 143);font-family:Montserrat;"> BIPM-CIPM</h2></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Para atender la propuesta del DCC, BIPM-CIPM creó un <b>Grupo de Tareas</b> (Task Group) con el objetivo de promover el SI en un marco digital, integrado por el Doctor Héctor Laiz por parte del INTI y de otros INM de todo el mundo, por ejemplo Alemania, Estados Unidos, China entre otros</p><p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;" >Y como grupo de apoyo al TG. se creó el <b>Grupo de Expertos</b> (Expert Group) del cual forma parte Diego Coppa, con apoyo de los INMs de México, Alemania, Corea del sur entre otros.</p></p>
-<p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">El CIPM, el máximo organismo de la metrología, está analizando la propuesta del DCC para su aprobación.</p>
-<p style="text-align:center;"><a href="https://isufddc0221.site.calypso-event.net/"> <img src="img/onlineworkshop.png" alt="Drawing" style="width: 400px;" align="center"/></a></p>
+<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">BIPM-CIPM creó un <i>Grupo de Tareas</i> (Task Group) con el objetivo de promover el "SI en un marco digital". Integrado por el Doctor Héctor Laiz por parte del INTI y de otros INMs de todo el mundo, por ejemplo de Alemania, Estados Unidos, China entre otros</p>
+<p style="text-align:center;"><a href="https://isufddc0221.site.calypso-event.net/"> <img src="img/onlineworkshop.png" alt="Drawing" style="width: 400px;float:right;"/></a></p>
+<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;" >Y como grupo de apoyo al TG se creó el <i>Grupo de Expertos</i> (Expert Group) del cual forma parte Diego Coppa, con apoyo de los INMs de México, Alemania, Corea del sur entre otros.</p>
+<p  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">El CIPM, el máximo organismo de la metrología, está analizando la propuesta del DCC para su aprobación. El DCC es un trabajo en progreso.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14518,8 +14515,8 @@ div.jp-OutputPrompt {
     setBackgroundImage("img/dofon8.png", "white");
 </script><p><h2 style="color:rgb(0, 53, 143);font-family:Montserrat;">¿Cómo es un certificado de calibración hoy?</h2></p>
 <p>&nbsp;</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Hoy un certificado calibración comunica información metrológica entre humanos, <i>legible por humanos</i> (human readable). El Certificado es un documento <i>impreso en papel</i> puede estar impreso en un papel especial para evitar su falsificación y posee con una <i>firma holográfica</i>.</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;" >En el caso de que sea en un formato digital, es certificado es un documento con un formato <i>pdf</i> con una firma digital. Aunque podría ser machine readable, sería en principio engorrosa su lectura.</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Hoy un certificado calibración comunica información metrológica entre humanos, <i>legible por humanos</i> (human readable). El Certificado es un documento <i>impreso en papel</i> puede estar impreso en un papel especial para evitar su falsificación y posee con una <i>firma holográfica</i>.</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;" >En el caso de que sea en un formato digital, es certificado es un documento con un formato <i>pdf</i> con una firma digital. Aunque podría ser machine readable, sería en principio engorrosa su lectura.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14535,7 +14532,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p><img src="img/papel_1.png" alt="Drawing" style="width: 1000px;"/></p>
+</script><p><img src="img/papel_1.png" alt="Drawing" style="width: 1400px;"/></p>
 
 </div>
 </div></section></section><section><section>
@@ -14543,7 +14540,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p><img src="img/paper 2.png" alt="Drawing" style="width: 1000px;"/></p>
+</script><p><img src="img/paper 2.png" alt="Drawing" style="width: 1400px;"/></p>
 
 </div>
 </div></section></section><section><section>
@@ -14551,7 +14548,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p><img src="img/paper 3.png" alt="Drawing" style="width: 1000px;"/></p>
+</script><p><img src="img/paper 3.png" alt="Drawing" style="width: 1400px;"/></p>
 
 </div>
 </div></section></section><section><section>
@@ -14568,17 +14565,26 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<h2 style="color:rgb(0, 53, 143);font-family:Montserrat;">¿Cuál es la propuesta superadora respecto al certificado?</h2><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Un DCC debe ser un documento <b>transferible, accesible, seguro, robusto, interoperable, reutilizable, machine accionable, capaz de ser entendido por humanos tanto como por máquinas y capaz de almacenar metada (datos que describen datos) como cualquier otra información que se requiera o sea útil metrológica o administrativamente</b>.</p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"><img src="img/dcc.png" alt="Drawing" style="width: 100px;float:left" >La propuesta es utilizar un formato <b>legible por máquinas</b> machine readable, capaz de ser <b>firmado digitalmente</b> y de ser <b>encriptado</b>.</p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">El formato elegido para la transferencia de datos es el formato <i>xml</i>.</p><p><img src="img/xmlicono.png" alt="Drawing" style="width: 50px;float:left"/></p>
-<p style="text-align:center;">
-<a href="https://www.go-fair.org/"><img src="img/gofair.png" alt="Drawing" style="width: 300px" /></a>
-</p>
+<p><h2 style="color:rgb(0, 53, 143);font-family:Montserrat;">¿Cuál es la propuesta superadora respecto al certificado?</h2>
+<a href="https://www.go-fair.org/"><img src="img/gofair.png" alt="Drawing" style="width: 200px;float:right;"></a></p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Un DCC debe ser un documento <b>transferible, accesible, seguro, robusto, interoperable, reutilizable, machine accionable, capaz de ser entendido por humanos tanto como por máquinas y capaz de almacenar metada (datos que describen datos) como cualquier otra información que se requiera o sea útil metrológica o administrativamente</b>.</p>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><script>
+    setBackgroundImage("img/dofon8.png", "white");
+</script></p>
+<p><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"><img src="img/dcc.png" alt="Drawing" style="width: 100px;float:left" >La propuesta es utilizar un formato <i>legible por máquinas</i> (machine readable) capaz de ser <i>firmado digitalmente</i> y de ser <i>encriptado</i>.</p> 
+&lt;/p&gt;<img src="img/xmlicono.png" alt="Drawing" style="width: 50px;float:right"> <p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">El formato elegido para la transferencia de datos es el formato <i>xml</i>.</p>
+
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Y así es como se vería un Certificado en el formato xml en crudo:</p>
+</script><p><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Y así es como se vería un Certificado en el formato xml en crudo:</p>
 <img src="img/xmldcc3.png" alt="Drawing" style="width: 700px;"/></p>
 
 </div>
@@ -14602,26 +14608,25 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Para desarmar este embrollo, tenemos que entender el <i>medio</i> con el que vamos a transferir la información metrológica.</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Para desarmar este embrollo, tenemos que entender el medio o el <i>formato</i> con el que vamos a transferir la información metrológica.</p>
 <a href="https://www.w3schools.com/xml/"><img src="img/w3school.png" alt="Drawing" style="width: 200px;float:right"/></a>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">La propuesta es utilizar el formato machine readable <i>xml legible por máquinas</i> que es un formato robusto y consistente para la comunicación entre máquinas.</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">XML es un formato de <i>texto plano.</i> </p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">La propuesta es utilizar el formato plano,  legible por máquinas, encriptable y firmable digitalmente, como es el <i>xml</i>.
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">el XML es similar al formato HTML (Hypertext Markup Language) y puede ser editable con cualquier procesador de texto.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">XML significa: Lenguaje de marcado extensible, <i> eXtensible Markup Language</i>. Es un lenguaje o metalenguaje que lleva más de veinte años siendo utilizado por bases de datos y otros usos. Un libro llamado "XML Bible" se escribió en 1999 y el lenguaje no ha cambiado significativamente desde entonces.</p>
-<img src="img/xmlicono.png" alt="Drawing" style="width: 50px;float:right">
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Se requiere transmitir unívocamente la información, para lo que el lenguaje xml utiliza los símbolos: <i>mayor</i> y <i>menor</i> para declarar <i>campos</i> y <i>tabuladores</i> para definir jerarquías (en forma de árbol) entre campos que llamamos  <i>padres</i> e <i>hijos</i>. Esta gobernación de padres e hijos es muy importante y es en lo que se base el esquema DCC.</p>
+</script><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">XML significa: Lenguaje de marcado extensible, <i> eXtensible Markup Language</i>. Es un lenguaje o metalenguaje que lleva más de veinte años siendo utilizado por bases de datos y otros usos. Un libro llamado "XML Bible" se escribió en 1999 y el lenguaje no ha cambiado significativamente desde entonces.</p>
+<img src="img/xmlicono.png" alt="Drawing" style="width: 50px;float:right"><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Se requiere transmitir unívocamente la información, para lo que el lenguaje xml utiliza los símbolos: <i>mayor</i> y <i>menor</i> para declarar <i>campos</i> y <i>tabuladores</i> para definir jerarquías (en forma de árbol) entre campos que llamamos  <i>padres</i> e <i>hijos</i>. Esta gobernación de padres e hijos es muy importante y es en lo que se basa el esquema DCC.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Ejemplo de la descripción del rol de una persona:</p>
+</script><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Ejemplo de la descripción del rol de una persona:</p>
 </div>
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -14656,13 +14661,14 @@ div.jp-OutputPrompt {
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<script>
+<p><script>
     setBackgroundImage("img/dofon8.png", "white");
-</script><p><h2 style="color:rgb(0, 53, 143);font-family:Montserrat;"> Definido el medio o el formato, ahora necesitamos definir ¿unidades digitales? más bien un D-SI</h2></p>
-<p style="font-size:50px;font-family:Montserrat;text-align:center"><span style='color: red'>D</span><span style='color:rgb(0, 53, 143)'>-SI</span></p>
+</script></p>
+<p><h3 style="color:rgb(0, 53, 143);font-family:Montserrat;"> Definido el medio o el formato, ahora necesitamos definir ¿unidades digitales? más bien un D-SI</h3></p>
+<p style="font-size:35px;font-family:Montserrat;text-align:center"><span style='color: red'>D</span><span style='color:rgb(0, 53, 143)'>-SI</span></p>
 <a href="https://www.bipm.org/en/measurement-units/"><img src="img/refunidades2.jpg" alt="Drawing" style="width: 200px;float:right;"/></a>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Surge la necesidad de comunicar información metrológica entre entes (máquinas por ejemplo)</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Y para llevar esto acabo, se requiere de una interoperabilidad semántica de datos entre sistemas que asegure una consistencia de datos. Por interoperabilidad semántica me refiero a que <b>los sistemas reconozcan de forma unívoca un dato compartido entre ellos</b>.</p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Por supuesto, no vamos a reinventar la rueda: <b>El SI es la base de la interoperabilidad en la trazabilidad metrológica.</b></p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Surge la necesidad de comunicar información metrológica entre entes (máquinas por ejemplo)</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Y para llevar esto acabo, se requiere de una interoperabilidad semántica de datos entre sistemas que asegure una consistencia de datos. Por interoperabilidad semántica me refiero a que <b>los sistemas reconozcan de forma unívoca un dato compartido entre ellos</b>.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14670,60 +14676,69 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">  Ahora, contextualizamos las unidades definidas en el SI, en el formato xml</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Por supuesto, no vamos a reinventar la rueda: <i>El SI es la base de la interoperabilidad en la trazabilidad metrológica.</i></p>
+<p style="font-size:45px;font-family:Montserrat;text-align:center"><span style='color: red'>D</span><span style='color:rgb(0, 53, 143)'>-SI</span></p>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><script>
+    setBackgroundImage("img/dofon8.png", "white");
+</script></p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">  Ahora, contextualizamos las unidades definidas en el SI, en el formato xml</p>
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><p>&nbsp;</p></p>
 <table style="margin: 0 right;">
-  <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Magnitud</b></td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Nombre de la unidad</b></td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Símbolo</b></td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Identificador xml</b></td>
+  <tr style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Magnitud</b></td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Nombre de la unidad</b></td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Símbolo</b></td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Identificador xml</b></td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">lenght</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">meter</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">m</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\meter</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">lenght</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">meter</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">m</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\meter</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">mass</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">kilogram</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">kg</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\kilogram</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">mass</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">kilogram</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">kg</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\kilogram</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">time</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">second</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">s</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\second</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">time</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">second</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">s</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\second</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">current</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">ampere</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">A</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\ampere</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">current</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">ampere</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">A</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\ampere</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">thermodinamic temperature</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">kelvin</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">K</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\kelvin</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">thermodinamic temperature</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">kelvin</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">K</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\kelvin</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">amount of substance</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">mole</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">mol</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\mole</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">amount of substance</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">mole</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">mol</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\mole</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">luminous intensity</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">candela</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">cd</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\candela</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">luminous intensity</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">candela</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">cd</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\candela</td>
   </tr>
 </table>
 </div>
@@ -14733,7 +14748,7 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Y, con la misma intención, pasamos al formato xml una medición de temperatura</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Y, con la misma intención, pasamos al formato xml una medición de temperatura</p>
 </div>
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -14764,32 +14779,32 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Y un ejemplo de unidades derivadas:</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Y un ejemplo de unidades derivadas:</p>
 <table style="margin: 0 right;">
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Unidad medida</b></td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Representación simbólica</b></td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;"><b>Representación en el formato de unidades del SI</b></td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Unidad medida</b></td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Representación simbólica</b></td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;"><b>Representación en el formato de unidades del SI</b></td>
     </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">Radian</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">$\frac{m}{m}$</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\metre\metre\tothe{-1}</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">Radian</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">$\frac{m}{m}$</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\metre\metre\tothe{-1}</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">Pascal</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">$\frac{kg}{m s^2}$</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\kilogram\metre\tothe{-1}\second\tothe{-2}</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">Pascal</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">$\frac{kg}{m s^2}$</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\kilogram\metre\tothe{-1}\second\tothe{-2}</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">Newton</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">$\frac{m.kg}{s^2}$</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\meter\kilogram\second\tothe{-2}\</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">Newton</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">$\frac{m.kg}{s^2}$</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\meter\kilogram\second\tothe{-2}\</td>
   </tr>
   <tr>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">Ohm</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">$\frac{m^2 .kg}{s^3 A^2}$</td>
-    <td style="color:rgb(0, 53, 143);font-size:20px;text-align:center;font-family:Montserrat;">\meter\tothe{-2}\kilogram\second\tothe{-3}\ampere\tothe{-2}</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">Ohm</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">$\frac{m^2 .kg}{s^3 A^2}$</td>
+    <td style="color:rgb(0, 53, 143);font-size:25px;text-align:center;font-family:Montserrat;">\meter\tothe{-2}\kilogram\second\tothe{-3}\ampere\tothe{-2}</td>
   </tr>
 </table>
 <p style="text-align:center;">
@@ -14803,9 +14818,9 @@ div.jp-OutputPrompt {
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
 <p><h2 style="color:rgb(0, 53, 143);font-family:Montserrat;">DCC</h2></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Hasta ahora mostré un ejemplo de certificado hoy, definí el rol de una persona y sus atributos, las unidades y la medición de una temperatura en contexto xml.</p><table>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Hasta ahora mostré un ejemplo de certificado hoy, definí el rol de una persona y sus atributos, las unidades y la medición de una temperatura en contexto xml.</p><table>
     <tr>
-        <td><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">La propuesta mas elaborada del DCC tiene como punto de partida cuatro capas de información.</p></td>
+        <td><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">La propuesta mas elaborada del DCC tiene como punto de partida cuatro capas de información.</p></td>
         <td><a href="https://www.ptb.de/dcc/v2.4.0/en/"> <img src="img/main structure.png" alt="Drawing" style="width: 2000px;"> </a></td>
     </tr>
 
@@ -14817,12 +14832,12 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Ahora bien, digamos que definimos todos los campos requeridos por un certificado en un xml. </p></p>
-<p><p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">¿Cómo continúo? </p></p>
-<p><h2  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Características del formato xml:</h2></p>
+<p><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Ahora bien, digamos que definimos todos los campos requeridos por un certificado en un xml. </p></p>
+<p><p  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">¿Cómo continúo? </p></p>
+<p><h2  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Características del formato xml:</h2></p>
 <ul>
-    <li style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Expandible o extensible</li>
-    <li style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Puede ser validado</li>
+    <li style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Expandible o extensible</li>
+    <li style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Puede ser validado</li>
 </ul>
 </div>
 </div></section></section><section><section>
@@ -14831,8 +14846,9 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<h2 style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Expandible</h2><p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Que sea expandible quiere decir que puede agregarse cualquier tipo de información dentro. La clave de la transmisión de datos es que la contraparte le pueda asignar un significado unívoco a lo que uno le transmite o quiera dejar asentado en el documento.</p><p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> A través de los campos no regulados uno puede agregar por ejemplo el certificado anterior, el budget de incertidumbre que se utilizó para llegar a los valores de la calibración, los valores crudos medidos del patrón y del equipo bajo calibración. Cualquier información que uno desee transmitir y que <b>convenga</b> guardar. Y siempre conviene almacenar toda la data y metadata de un trabajo como soporte.</p>
-<p style="font-size:80px;font-family:Montserrat;text-align:center"><img src="img/metadata.png" alt="Drawing" style="width: 400px;"></p>
+<h2 style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Expandible</h2><p  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Que sea expandible quiere decir que puede agregarse cualquier tipo de información dentro. La clave de la transmisión de datos es que la contraparte le pueda asignar un significado unívoco a lo que uno le transmite o quiera dejar asentado en el documento.</p>
+<img src="img/metadata.png" alt="Drawing" style="width: 300px;float:right;">
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> A través de los <b>campos no regulados</b> uno puede agregar por ejemplo el certificado anterior, el budget de incertidumbre que se utilizó para llegar a los valores de la calibración, los valores crudos medidos del patrón y del equipo bajo calibración. Cualquier información que uno desee transmitir y que <b>convenga</b> guardar. Y siempre conviene almacenar toda la data y <b>metadata</b> de un trabajo como soporte.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14840,10 +14856,12 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p><h2 style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">El xml debe ser validado para que la comunicación sea estandarizada</h2></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> Se <b>debe realizar el control de los campos y el control del árbol de padres e hijos</b> del xml. Este control se realiza a través del formato <b>xsd</b>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">El xsd tiene su propio formato y también está definido en el w3consortium.</p><p><a href="https://www.w3schools.com/xml/schema_intro.asp"><img src="img/w3school.png" alt="Drawing" style="width: 300px;"/></a></p>
-<p  style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> A partir de que uno puede extender el xml, o sea definir campos adicionales en lugares especiales. Surge la necesidad de validar los xml extendidos. Para lo cual pueden crearse archivos de formato <b>.xsd</b> para validar el xml.</p><p   style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> La definición del DCC se va a realizar a través del formato xsd.</p>
+<p><h2 style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">El xml debe ser validado para que la comunicación sea estandarizada</h2></p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> Se <b>debe realizar el control de los campos y el control del árbol de padres e hijos</b> del xml. Este control se realiza a través del formato <b>xsd</b>
+<a href="https://www.w3schools.com/xml/schema_intro.asp"><img src="img/w3school.png" alt="Drawing" style="width: 300px;float:right;"/></a>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">El xsd tiene su propio formato y también está definido en el w3consortium.</p>
+<p  style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> A partir de que uno puede extender el xml, o sea definir campos adicionales en lugares especiales. Surge la necesidad de validar los xml extendidos. Para lo cual pueden crearse archivos de formato <b>.xsd</b> para validar el xml.</p>
+<p   style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> La definición del DCC se va a realizar a través del formato xsd.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14851,8 +14869,8 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<h2 style="color:rgb(0, 53, 143);font-family:Montserrat;">Firma digital, Encripción, y Transmisión.</h2><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Para que un documento sea confiable debe tener una firma electrónica segura, confiable, consistente.</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">La firma electrónica la regulan los estados de los países.</p>
+<h2 style="color:rgb(0, 53, 143);font-family:Montserrat;">Firma digital, Encripción, y Transmisión.</h2><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Para que un documento sea confiable debe tener una firma electrónica segura, confiable, consistente.</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">La firma electrónica la regulan los estados de los países.</p>
 <table>
     <tr>
         <td><a href="https://www.argentina.gob.ar/jefatura/innovacion-publica/administrativa/firmadigital"> <img src="img/firma1.png" alt="Drawing" style="width: 100px;font-family:Montserrat;"> </a></td>
@@ -14867,9 +14885,10 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<h3 style="color:rgb(0, 53, 143);font-family:Montserrat;">Encripción</h3><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;"> En cuanto a la encripción no existe una propuesta en concreta. Pero se especula con SHA-256.</p><h3 style="color:rgb(0, 53, 143);font-family:Montserrat;">Transmisión y almacenaje</h3><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">En cuanto a la transmisión y almacenaje, el 
+<h3 style="color:rgb(0, 53, 143);font-family:Montserrat;">Encripción</h3><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> En cuanto a la encripción no existe una propuesta en concreta. Pero se especula con SHA-256.</p><h3 style="color:rgb(0, 53, 143);font-family:Montserrat;">Transmisión y almacenaje</h3><p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">En cuanto a la transmisión y almacenaje, el 
     documento puede almacenarse en una blockchain, filechain o enviado por mail.</p><p><a href="https://bfa.ar/"><img src="img/bfa.png" alt="Drawing" style="width: 150px;float:left;"></a></p>
-<h3 style="color:rgb(0, 53, 143);font-family:Montserrat;"> ¿Qué implica en el mediano plazo y la transición?</h3><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">La propuesta es que a mediano plazo el xml <i>no vaya asociado con un pdf</i> legible por humanos. El certificado que se firma digitalmente y se encripta va a ser el documento xml.</p><p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Durante la transición, el pdf irá asociado al xml. En cuanto a la firma del pdf que se inserta dentro del xml no entra dentro de los requerimientos del DCC.</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;"> <b>¿Qué implica en el mediano plazo y la transición?</b> La propuesta es que a mediano plazo el xml <i>no vaya asociado con un pdf</i> legible por humanos. El certificado que se firma digitalmente y se encripta va a ser el documento xml.
+Durante la transición, el pdf irá asociado al xml. En cuanto a la firma del pdf que se inserta dentro del xml no entra dentro de los requerimientos del DCC.</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14889,7 +14908,7 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p><h3 style="color:rgb(0, 53, 143);font-size:20px;">¿Incorporamos el manual a un protocolo de comunicación para que se transmita digitalmente la incertidumbre según rango, longevidad del instrumento, etc?</h3>
+<p><h3 style="color:rgb(0, 53, 143);font-size:25px;">¿Incorporamos el manual a un protocolo de comunicación para que se transmita digitalmente la incertidumbre según rango, longevidad del instrumento, etc?</h3>
 <img src="img/especificaciones.png" alt="Drawing" style="width: 800px;font-family:Montserrat;"></p>
 
 </div>
@@ -14899,7 +14918,7 @@ div.jp-OutputPrompt {
 <p><script>
     setBackgroundImage("img/dofon8.png", "white");
 </script></p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Redes de sensores</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Redes de sensores</p>
 <img src="img/networksensors.png" alt="Drawing" style="width: 800px;font-family:Montserrat;">
 <p>&nbsp;</p>
 <p style="color:rgb(0, 53, 143);font-size:10px;font-family:Montserrat;">Tuukka Mustapää, Pekka Nikander, Daniel Hutzschenreuter y Raine Viitala (2020). Metrological Challenges in Collaborative Sensing: Applicability of Digital Calibration Certificates. <i>sensors - MDPI</i> </p>
@@ -14911,11 +14930,11 @@ div.jp-OutputPrompt {
     setBackgroundImage("img/dofon8.png", "white");
 </script><p><h2 style="color:rgb(0, 53, 143);">Tópicos para preguntas:</h2></p>
 <p>&nbsp;</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Middleware, o ¿cómo implementar en contexto  del sistema de calidad administrativo en DCC?</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Middleware, o ¿cómo implementar en contexto  del sistema de calidad administrativo en DCC?</p>
 <p>&nbsp;</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Otros tipos de DCC: DCR, DCA</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Otros tipos de DCC: DCR, DCA</p>
 <p>&nbsp;</p>
-<p style="color:rgb(0, 53, 143);font-size:20px;font-family:Montserrat;">Lectura de un xml/dcc con lxml etree y python</p>
+<p style="color:rgb(0, 53, 143);font-size:25px;font-family:Montserrat;">Lectura de un xml/dcc con lxml etree y python</p>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
